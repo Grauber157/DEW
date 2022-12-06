@@ -4,50 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animação</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Atividade</title>
 </head>
 <body>
     
+    <img src="gil.jpg" alt="personagem" id="personagem" height="300px" width="500px">
+
+
+    <h1 id="nome">Gil da Esfirra</h1>
+    <p id="paragrafo">Gil da Esfirra foi um homem forte, astuto e estava apenas na sua, resistindo aos insuportaveis comentarios de Galerito, 
+        mas todo homem tem sua paciência... Assim indo para cima de Galerito ocorrendo um dos 
+        maiores confrontos da TV aberta brasileira.</p>
+
+    <script>
+        function trocarImagem() {
+            document.getElementById('personagem').src='gil.jpg'
+        }
+    </script>
+
+    <input type="button" value="Texto" onclick="document.getElementById('nome').innerHTML = 'PESSOA FANTÁSTICA'">
+    <input type="button" value="Cor" onclick="document.getElementById('paragrafo').style.color='lightgreen'">
+    <input type="button" value="Mostrar" onclick="document.getElementById('paragrafo').style.display='block' ">
+    <input type="button" value="Ocultar" onclick="document.getElementById('paragrafo').style.display='none' ">
+    <input type="button" value="Criança" onclick="document.getElementById('personagem').src='crianca.jpg' ">
+    <input type="button" value="Crescer" onclick="trocarImagem()">
+
+    <input type="button" value="Pequena" onclick="document.getElementById('personagem').style.width = (currWidth = 100) + 'px' ">
+    <input type="button" value="Média" onclick="document.getElementById('personagem').style.width = (currWidth = 300) + 'px' ">
+    <input type="button" value="Grande" onclick="document.getElementById('personagem').style.width = (currWidth = 500) + 'px' ">
     
-
-    <div id="local1">
-        <div id="caixa">
-            <div id="eyes1"></div>
-            <div id="eyes2"></div>
-            <div id="mouth"></div>
-        </div>
-        <div id="obstaculo1"></div>
-        <div id="obstaculo2"></div>
-        <div id="obstaculo3"></div>
-        <div id="portal1"></div>
-        <div id="linha1"></div>
-    </div>
-
-    <div id="local2">
-            <div id="caixa2">
-                
-                <div id="eyes1"></div>
-                <div id="eyes2"></div>
-                <div id="mouth"></div>
-                <div id="spaceship"></div>
-            </div>
-        <div id="obstaculo4"></div>
-        <div id="obstaculo5"></div>
-        <div id="obstaculo6"></div>
-        <div id="obstaculo7"></div>
-        <div id="obstaculo8"></div>
-        <div id="obstaculo9"></div>
-        <div id="obstaculo10"></div>
-        <div id="obstaculo11"></div>
-        
-        <div id="portal2"></div>
-        <div id="portal3"></div>
-    </div>
-
-        <div id="linha2"></div>
-    
-
 
 </body>
 </html>
